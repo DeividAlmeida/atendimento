@@ -24,6 +24,12 @@
     }
        <?php 
 $po = $central['posição'];
+$zxs = $central['gatilho'];
+$zxz = strlen($zxs);
+if ($zxz < 1) {
+  echo ".animation::after{display: none;}
+    .animation{display: none;}";
+}
 
     if ( $po === 'right') {
       echo "
