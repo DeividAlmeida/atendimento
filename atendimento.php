@@ -1,4 +1,4 @@
-<link type="text/css" href="wa/atendimento/css/widget.css" rel="stylesheet">
+
 <?php
 
 
@@ -11,7 +11,7 @@
 	$TitlePage = 'Atendimento';
 	$UrlPage	 = 'atendimento.php';
 ?>
-
+<link type="text/css" href="wa/atendimento/css/widget.css" rel="stylesheet">
 <div class="has-sidebar-left">
 	<header class="blue accent-3 relative nav-sticky">
 		<div class="container-fluid text-white">
