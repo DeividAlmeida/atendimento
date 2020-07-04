@@ -67,7 +67,7 @@ if ($zxz < 1) {
       border-radius: 5px;
       background: white;
       cursor: pointer;
-      z-index: 1;
+      z-index: 1000000;
       cursor: default;
     }
 @media only screen and (max-width: 539px) {
@@ -78,7 +78,7 @@ if ($zxz < 1) {
       margin: 0;
       padding: 0;
       display: none;
-      z-index:1;
+      z-index:100000;
         }
     }
 @media only screen and (min-width: 539px) {
@@ -89,7 +89,7 @@ if ($zxz < 1) {
       margin: 0;
       padding: 0;
       display: none;
-      z-index:1;
+      z-index:10000000;
         }
 }
 
@@ -111,7 +111,7 @@ if ($zxz < 1) {
       border-radius: 5px;
       background: white;
       cursor: pointer;
-      z-index: 1;
+      z-index: 1000000;
       cursor: default;
     }
       .animation::after{
@@ -139,7 +139,7 @@ if ($zxz < 1) {
       margin: 0;
       padding: 0;
       display: none;
-      z-index:1;
+      z-index:100000;
     }
 
 ";} ?>
@@ -162,7 +162,7 @@ if ($zxz < 1) {
     	position: fixed;
     	right: 110px; 
     	bottom: 90px;
-    	z-index:1;
+    	z-index:100000;
     }
 
     #bt_scd{
