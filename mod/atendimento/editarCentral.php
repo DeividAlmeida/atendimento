@@ -14,7 +14,7 @@ $id = get('EditarCentral'); $Query = DBRead('c_atendimento','*',"WHERE id = '{$i
 								<!-- NOME -->
 								<div class="form-group">
 									<label>Nome da Central:</label>
-									<input class="form-control" name="nome" value="<?php echo $dados['nome']; ?>" required>
+									<input class="form-control" name="nome" value="<?php echo $dados['nome']; ?>" required style="margin-bottom: 16px">
 								</div>
 
 								<!-- LOGO -->
@@ -22,7 +22,7 @@ $id = get('EditarCentral'); $Query = DBRead('c_atendimento','*',"WHERE id = '{$i
 									<label>Logotipo:</label>
 								<center>
 									<div>
-										<input onchange="readURL(this);"  style="width: 0.1px; height: 0.1px; opacity: 0; overflow: hidden; z-index: -1;" type="file" multiple accept='image/*' name="imagem_arquivo1" id="imagem_arquivo1">
+										<input onchange="readURL(this);"  style="width: 0.1px; height: 0.1px; opacity: 0; overflow: hidden; z-index: -1;" type="file" multiple accept='image/*' name="imagem_arquivo1" id="imagem_arquivo1" >
    										<label multiple accept='image/*' class="btn btn-primary" for="imagem_arquivo1">
 									        <svg style="height: 16px; margin-right: 4px;" aria-hidden="true" focusable="false" 
 									        		data-prefix="fas" data-icon="upload"class="svg-inline--fa fa-upload fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -33,12 +33,10 @@ $id = get('EditarCentral'); $Query = DBRead('c_atendimento','*',"WHERE id = '{$i
         									<span>Upload logo</span>
        									</lable>  
 									</div>
-								<img id="blah"  src="wa/atendimento/uploads/<?php echo $dados['logo']; ?>" />
-								<span id="orie" alt="Seu logo de ter as seguintes dimensões 180 x 180">Seu logo de ter as seguintes dimensões 180 x 180
-									     	</span>
+								<center><img id="blah"  src="wa/atendimento/uploads/<?php echo $dados['logo']; ?>" /></center>
+								<span id="orie" alt="Seu logo de ter as mesmas dimensões de largura e altura">Seu logo de ter as mesmas dimensões de largura e altura</span>
 								<center>
 							</div> 					
-
 								<!-- LIMITE -->
 								<div class="form-group">
 									<label>Mensagem de Saudação::</label>
@@ -64,7 +62,7 @@ $id = get('EditarCentral'); $Query = DBRead('c_atendimento','*',"WHERE id = '{$i
 								<!-- POSIÇÃO -->
 								<div class="form-group">
 									<label>Posição:</label>
-									<select name="posição" required class="form-control custom-select" data-selected="<?php echo $dados['posição']; ?>">
+									<select name="posição" required class="form-control custom-select" data-selected="<?php echo $dados['posição']; ?>" style="margin-bottom: 16px">
 										<option value="left">Esquerda</option>
 										<option value="right">Direita</option>
 									</select>

@@ -118,48 +118,71 @@ var b = document.getElementById("bt_all");
 
 
 <script>
+var a = document.getElementById("big_box");
+var b = document.getElementById("bt_all");
 function face() {
   var xhttp = new XMLHttpRequest();
   
   xhttp.open("GET", "<?php echo ConfigPainel('base_url'); ?>/wa/atendimento/2nd_controller.php?face&id=<?php echo $itens['id']?>", true);
   xhttp.send();
+  a.style.display = "none";
+  b.style.display = "block";
 }
 function whats() {
   var xhttp = new XMLHttpRequest();
   
   xhttp.open("GET", "<?php echo ConfigPainel('base_url'); ?>/wa/atendimento/2nd_controller.php?whats&id=<?php echo $itens['id']?>", true);
   xhttp.send();
+  a.style.display = "none";
+  b.style.display = "block";
 }
 function line() {
   var xhttp = new XMLHttpRequest();
   
   xhttp.open("GET", "<?php echo ConfigPainel('base_url'); ?>/wa/atendimento/2nd_controller.php?line&id=<?php echo $itens['id']?>", true);
   xhttp.send();
-}function telegram() {
+  a.style.display = "none";
+  b.style.display = "block";
+}
+function telegram() {
   var xhttp = new XMLHttpRequest();
   
   xhttp.open("GET", "<?php echo ConfigPainel('base_url'); ?>/wa/atendimento/2nd_controller.php?telegram&id=<?php echo $itens['id']?>", true);
   xhttp.send();
-}function vkontakte() {
+  a.style.display = "none";
+  b.style.display = "block";
+}
+function vkontakte() {
   var xhttp = new XMLHttpRequest();
   
   xhttp.open("GET", "<?php echo ConfigPainel('base_url'); ?>/wa/atendimento/2nd_controller.php?vkontakte&id=<?php echo $itens['id']?>", true);
   xhttp.send();
-}function sms() {
+  a.style.display = "none";
+  b.style.display = "block";
+}
+function sms() {
   var xhttp = new XMLHttpRequest();
   
   xhttp.open("GET", "<?php echo ConfigPainel('base_url'); ?>/wa/atendimento/2nd_controller.php?sms&id=<?php echo $itens['id']?>", true);
   xhttp.send();
-}function call() {
+  a.style.display = "none";
+  b.style.display = "block";
+}
+function call() {
   var xhttp = new XMLHttpRequest();
   
   xhttp.open("GET", "<?php echo ConfigPainel('base_url'); ?>/wa/atendimento/2nd_controller.php?call&id=<?php echo $itens['id']?>", true);
   xhttp.send();
-}function email() {
+  a.style.display = "none";
+  b.style.display = "block";
+}
+function email() {
   var xhttp = new XMLHttpRequest();
   
   xhttp.open("GET", "<?php echo ConfigPainel('base_url'); ?>/wa/atendimento/2nd_controller.php?email&id=<?php echo $itens['id']?>", true);
   xhttp.send();
+  a.style.display = "none";
+  b.style.display = "block";
 }
 </script>
 

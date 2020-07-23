@@ -2,7 +2,8 @@
   header('Access-Control-Allow-Origin: *');
 	require_once('../../includes/funcoes.php');
 	require_once('../../database/config.database.php');
-	require_once('../../database/config.php');
+  require_once('../../database/config.php');
+ 
 	$id = $_GET['id'];
 	$itens 			= DBRead('atendimento','*',"WHERE id = '{$id}'")[0];
 
