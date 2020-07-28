@@ -20,8 +20,7 @@ if(!checkPermission($PERMISSION, $_SERVER['SCRIPT_NAME'], 'central', 'adicionar'
 							
 								<!-- LOGO -->
 							<div class="form-group">
-									<label>Logotipo:</label>
-								<center>
+									<label>Logotipo:</label>								
 									<div>
 										<input onchange="readURL(this);"  style="width: 0.1px; height: 0.1px; opacity: 0; overflow: hidden; z-index: -1;" type="file" multiple accept='image/*' name="imagem_arquivo" id="imagem_arquivo1">
    										<label multiple accept='image/*' class="btn btn-primary" for="imagem_arquivo1">
@@ -36,8 +35,7 @@ if(!checkPermission($PERMISSION, $_SERVER['SCRIPT_NAME'], 'central', 'adicionar'
 
 									</div>
 									     	<img id="blah"  src="wa/atendimento/img/erro.png"  />
-									     	<span id="orie" alt="Seu logo de ter as mesmas dimensões de largura e altura">Seu logo de ter as mesmas dimensões de largura e altura</span>
-								<center>
+									     	<center><span id="orie" alt="Seu logo deve ter as mesmas dimensões de largura e altura">Seu logo deve ter as mesmas dimensões de largura e altura</span></center>
 							</div> 					
 
 								<!-- LIMITE -->

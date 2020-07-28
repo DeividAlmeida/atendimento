@@ -83,10 +83,15 @@ if (isset($_GET['AtualizarCentral'])) {
     'cor'             => post('cor'),
     'posição'         => post('posição'),
     'gatilho'         => post('gatilho'),
-    'logo'            => $handle->file_dst_name
   );
-
+  if($_FILES['imagem_arquivo1']['name'] == null){}else{
+    $data5 = array(
+      'logo'            => $handle->file_dst_name
+    );
+    $query5 = DBUpdate('c_atendimento', $data5, "id = '{$id}'");
+  }
   $query = DBUpdate('c_atendimento', $data, "id = '{$id}'");
+ 
   if ($query != 0) {
     Redireciona('?Implementacao&sucesso');
   } else {
