@@ -36,7 +36,7 @@
 			<!-- LISTAR ITENS -->
 			<?php
 				if(isset($_GET['VisualizarCentral'])){
-					require_once('mod/atendimento/listarItens,php');
+					require_once('mod/atendimento/listarItens.php');
 					
 				}elseif(isset($_GET['AdicionarItens'])){
 					require_once('mod/atendimento/addItens.php');

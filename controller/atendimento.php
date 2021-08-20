@@ -51,9 +51,9 @@ if (isset($_GET['AddCentral'])) {
 
   $data = array(
     'nome'            => post('nome'),
-    'saudação'        => post('saudação'),
-    'cor'             => post('cor'),
-    'posição'         => post('posição'),
+    'tipo'        => post('tipo'),
+    'largura'             => post('largura'),
+    'altura'         => post('altura'),
     'gatilho'         => post('gatilho'),
     'logo'            => $handle->file_dst_name
   );
