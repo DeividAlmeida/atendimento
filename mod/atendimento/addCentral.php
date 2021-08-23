@@ -21,7 +21,7 @@ if(!checkPermission($PERMISSION, $_SERVER['SCRIPT_NAME'], 'central', 'adicionar'
 								<!-- LOGO -->
 							<div class="form-group">
 									<label>Logotipo:</label>								
-									<div>
+									<div style="display: flex; justify-content: center;">
 										<input onchange="readURL(this);"  style="width: 0.1px; height: 0.1px; opacity: 0; overflow: hidden; z-index: -1;" type="file" multiple accept='image/*' name="imagem_arquivo" id="imagem_arquivo1">
    										<label multiple accept='image/*' class="btn btn-primary" for="imagem_arquivo1">
 									        <svg style="height: 16px; margin-right: 4px;" aria-hidden="true" focusable="false" 
